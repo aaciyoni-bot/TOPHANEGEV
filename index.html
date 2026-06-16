@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>טופ הנגב פרויקטים בנין ופיתוח בע"מ | קבלן רשום סיווג ג'-5</title>
+    <meta name="description" content="חברת טופ הנגב פרויקטים בנין ופיתוח בע״מ מתמחה בעבודות עפר, פיתוח שטח, סלילת כבישים ותשתיות זרימה באזור הנגב והדרום. קבלן רשום משרד השיכון סיווג בלתי מוגבל ג'-5.">
+    
+    <!-- Google Fonts: Heebo for a clean, modern Hebrew look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Heebo', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            navy: '#0f172a',    // Dark Slate/Navy for corporate authority
+                            orange: '#f97316',  // Orange/Amber for heavy machinery & earth
+                            light: '#f8fafc',
+                            gray: '#64748b'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Animations & Styles */
+        body { scroll-behavior: smooth; }
+        
+        .hero-bg {
+            background-image: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.7)), url('https://images.unsplash.com/photo-1541888086425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .ticker-wrap {
+            width: 100%;
+            overflow: hidden;
+            background-color: #f1f5f9;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            border-top: 1px solid #e2e8f0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .ticker {
+            display: inline-flex;
+            white-space: nowrap;
+            animation: ticker 30s linear infinite;
+        }
+
+        @keyframes ticker {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="font-sans text-brand-navy bg-brand-light antialiased">
+
+    <!-- Top Bar (Small) -->
+    <div class="bg-brand-navy text-white text-sm py-2 px-4 hidden md:block">
+        <div class="container mx-auto flex justify-between items-center max-w-7xl">
+            <div class="flex space-x-4 space-x-reverse">
+                <span><i class="fa-solid fa-location-dot text-brand-orange ml-2"></i> מורדי הגטאות 127, באר שבע</span>
+                <span><i class="fa-solid fa-envelope text-brand-orange ml-2"></i> office@tophanegev.co.il</span>
+            </div>
+            <div class="flex space-x-4 space-x-reverse items-center">
+                <span><i class="fa-regular fa-clock text-brand-orange ml-2"></i> א'-ה' 07:30 - 19:30</span>
+                <span class="bg-brand-orange text-white px-3 py-1 rounded font-bold text-xs">קבלן רשום ג'-5</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="#" class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-brand-navy rounded-lg flex items-center justify-center relative overflow-hidden">
+                            <i class="fa-solid fa-building text-brand-orange text-2xl relative z-10"></i>
+                            <div class="absolute bottom-0 w-full h-1 bg-brand-orange"></div>
+                        </div>
+                        <div>
+                            <h1 class="font-black text-xl leading-tight text-brand-navy">טופ הנגב</h1>
+                            <p class="text-[0.65rem] font-bold text-gray-500 tracking-wide">פרויקטים בנין ופיתוח בע"מ</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex gap-2 lg:gap-3 font-semibold text-brand-navy items-center">
+                    <a href="#about" class="bg-gray-50 border border-gray-200 text-brand-navy px-3 lg:px-4 py-2 rounded-lg hover:bg-brand-orange hover:text-white hover:border-brand-orange transition-all duration-300 shadow-sm text-sm lg:text-base">אודות החברה</a>
+                    <a href="#services" class="bg-gray-50 border border-gray-200 text-brand-navy px-3 lg:px-4 py-2 rounded-lg hover:bg-brand-orange hover:text-white hover:border-brand-orange transition-all duration-300 shadow-sm text-sm lg:text-base">תחומי התמחות</a>
+                    <a href="#projects" class="bg-gray-50 border border-gray-200 text-brand-navy px-3 lg:px-4 py-2 rounded-lg hover:bg-brand-orange hover:text-white hover:border-brand-orange transition-all duration-300 shadow-sm text-sm lg:text-base">פרויקטים נבחרים</a>
+                    <a href="#esg" class="bg-gray-50 border border-gray-200 text-brand-navy px-3 lg:px-4 py-2 rounded-lg hover:bg-brand-orange hover:text-white hover:border-brand-orange transition-all duration-300 shadow-sm text-sm lg:text-base">בטיחות ו-ESG</a>
+                    <a href="#careers" class="bg-gray-50 border border-gray-200 text-brand-navy px-3 lg:px-4 py-2 rounded-lg hover:bg-brand-orange hover:text-white hover:border-brand-orange transition-all duration-300 shadow-sm text-sm lg:text-base">דרושים</a>
+                    <a href="#contact" class="bg-brand-navy text-white px-5 lg:px-6 py-2 rounded-lg hover:bg-brand-orange transition-all duration-300 shadow-md text-sm lg:text-base">צור קשר</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-brand-navy text-2xl focus:outline-none">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg">
+            <div class="px-4 pt-4 pb-6 space-y-3 font-semibold">
+                <a href="#about" class="block py-3 px-4 bg-gray-50 border border-gray-200 rounded-lg text-brand-navy hover:bg-brand-orange hover:text-white transition-colors text-center shadow-sm">אודות החברה</a>
+                <a href="#services" class="block py-3 px-4 bg-gray-50 border border-gray-200 rounded-lg text-brand-navy hover:bg-brand-orange hover:text-white transition-colors text-center shadow-sm">תחומי התמחות</a>
+                <a href="#projects" class="block py-3 px-4 bg-gray-50 border border-gray-200 rounded-lg text-brand-navy hover:bg-brand-orange hover:text-white transition-colors text-center shadow-sm">פרויקטים נבחרים</a>
+                <a href="#esg" class="block py-3 px-4 bg-gray-50 border border-gray-200 rounded-lg text-brand-navy hover:bg-brand-orange hover:text-white transition-colors text-center shadow-sm">בטיחות ו-ESG</a>
+                <a href="#careers" class="block py-3 px-4 bg-gray-50 border border-gray-200 rounded-lg text-brand-navy hover:bg-brand-orange hover:text-white transition-colors text-center shadow-sm">דרושים</a>
+                <a href="#contact" class="block py-3 px-4 bg-brand-navy text-white rounded-lg hover:bg-brand-orange transition-colors text-center shadow-md">צור קשר <i class="fa-solid fa-arrow-left ml-1"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-[80vh] min-h-[600px] flex items-center relative">
+        <div class="container mx-auto px-4 max-w-7xl relative z-10">
+            <div class="max-w-3xl text-white">
+                <div class="inline-block bg-brand-orange text-white font-bold px-4 py-1 rounded mb-6 text-sm md:text-base shadow-lg border border-orange-400">
+                    <i class="fa-solid fa-certificate ml-2"></i> סיווג בלתי מוגבל - ענף 200 קבוצה ג'-5
+                </div>
+                <h2 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
+                    עוצמה ביצועית. <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-l from-brand-orange to-yellow-400">אמינות הנדסית.</span>
+                </h2>
+                <p class="text-lg md:text-xl mb-10 text-gray-200 max-w-2xl font-light">
+                    מובילים את פיתוח התשתיות, עבודות העפר וסלילת הכבישים בנגב ובדרום משנת 1998. שותפים אסטרטגיים לפרויקטים הלאומיים והמוניציפליים הגדולים בישראל.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="bg-brand-orange hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-lg text-center transition-colors shadow-lg text-lg">
+                        להגשת מכרזים ושיתופי פעולה
+                    </a>
+                    <a href="#projects" class="bg-transparent border-2 border-white hover:bg-white hover:text-brand-navy text-white font-bold py-4 px-8 rounded-lg text-center transition-colors text-lg">
+                        צפייה בפרויקטים
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bottom Wave/Shape Divider -->
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+            <svg class="relative block w-full h-[50px] md:h-[100px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="fill-brand-light"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-12 bg-brand-light -mt-20 relative z-20">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+                <div class="glass-card p-6 rounded-xl text-center shadow-xl">
+                    <i class="fa-solid fa-calendar-check text-4xl text-brand-orange mb-3"></i>
+                    <div class="text-4xl font-black text-brand-navy mb-1"><span class="counter" data-target="25">0</span>+</div>
+                    <div class="text-sm font-semibold text-gray-500">שנות ניסיון מוכח</div>
+                </div>
+                <div class="glass-card p-6 rounded-xl text-center shadow-xl">
+                    <i class="fa-solid fa-layer-group text-4xl text-brand-orange mb-3"></i>
+                    <div class="text-4xl font-black text-brand-navy mb-1">ג'-5</div>
+                    <div class="text-sm font-semibold text-gray-500">סיווג קבלני מקסימלי</div>
+                </div>
+                <div class="glass-card p-6 rounded-xl text-center shadow-xl">
+                    <i class="fa-solid fa-truck-monster text-4xl text-brand-orange mb-3"></i>
+                    <div class="text-4xl font-black text-brand-navy mb-1"><span class="counter" data-target="80">0</span>+</div>
+                    <div class="text-sm font-semibold text-gray-500">כלי צמ"ה בבעלות</div>
+                </div>
+                <div class="glass-card p-6 rounded-xl text-center shadow-xl">
+                    <i class="fa-solid fa-handshake-angle text-4xl text-brand-orange mb-3"></i>
+                    <div class="text-4xl font-black text-brand-navy mb-1"><span class="counter" data-target="200">0</span>+</div>
+                    <div class="text-sm font-semibold text-gray-500">פרויקטים מוסדיים</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Ticker (Social Proof) -->
+    <div class="ticker-wrap mb-16">
+        <div class="ticker flex items-center gap-12 px-8 text-xl font-bold text-gray-400">
+            <span><i class="fa-solid fa-landmark text-gray-300 ml-2"></i> משרד הבינוי והשיכון</span>
+            <span><i class="fa-solid fa-water text-gray-300 ml-2"></i> רשות ניקוז ערבה</span>
+            <span><i class="fa-solid fa-city text-gray-300 ml-2"></i> מועצה אזורית חבל אילות</span>
+            <span><i class="fa-solid fa-road text-gray-300 ml-2"></i> נתיבי ישראל</span>
+            <span><i class="fa-solid fa-building-flag text-gray-300 ml-2"></i> עיריית כפר קאסם</span>
+            <span><i class="fa-solid fa-tree-city text-gray-300 ml-2"></i> מועצה מקומית ערערה בנגב</span>
+            <!-- Duplicate for infinite scroll effect -->
+            <span><i class="fa-solid fa-landmark text-gray-300 ml-2"></i> משרד הבינוי והשיכון</span>
+            <span><i class="fa-solid fa-water text-gray-300 ml-2"></i> רשות ניקוז ערבה</span>
+            <span><i class="fa-solid fa-city text-gray-300 ml-2"></i> מועצה אזורית חבל אילות</span>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+                <div class="lg:w-1/2">
+                    <h3 class="text-brand-orange font-bold text-lg mb-2">תעודת זהות תאגידית</h3>
+                    <h2 class="text-4xl font-black mb-6">בונים את העתיד של הנגב</h2>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        חברת טופ הנגב פרויקטים בנין ופיתוח בע"מ (ח.פ 512590431) התאגדה בשנת 1998 בבאר שבע ומאז מהווה עוגן ביצועי מרכזי לפיתוח התשתיות באזור הדרום והארץ כולה. 
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        החברה מסווגת בפנקס הקבלנים של רשם הקבלנים בענף 200 (כבישים, תשתית ופיתוח) בסיווג המקסימלי והבלתי מוגבל - <strong>ג'-5</strong>. סיווג זה מהווה חותמת רשמית לאיתנות הפיננסית, ליכולות ההנדסיות ולניסיון הביצועי העשיר של החברה בניהול מגה-פרויקטים ומכרזי ענק מול רשויות ממשלתיות, מוניציפליות ותאגידים.
+                    </p>
+                    
+                    <div class="bg-gray-50 border-r-4 border-brand-orange p-6 rounded-l-lg mb-8">
+                        <h4 class="font-bold text-brand-navy mb-2"><i class="fa-solid fa-shield-halved text-brand-orange ml-2"></i> רישוי ורגולציה</h4>
+                        <ul class="text-sm text-gray-600 space-y-2">
+                            <li><i class="fa-solid fa-check text-green-500 ml-2"></i> קבלן מוכר לביצוע עבודות ממשלתיות</li>
+                            <li><i class="fa-solid fa-check text-green-500 ml-2"></i> תקני בטיחות וניהול איכות מחמירים</li>
+                            <li><i class="fa-solid fa-check text-green-500 ml-2"></i> הון אנושי הכולל מהנדסים, מודדים ומנהלי עבודה מוסמכים</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 relative">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070&auto=format&fit=crop" alt="אתר בנייה של טופ הנגב" class="rounded-xl shadow-2xl z-10 relative">
+                    <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-brand-orange rounded-xl -z-0 opacity-20"></div>
+                    <div class="absolute -top-6 -left-6 w-32 h-32 bg-brand-navy rounded-xl -z-0 opacity-10"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-brand-light">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h3 class="text-brand-orange font-bold text-lg mb-2">תחומי התמחות (ענף 200)</h3>
+                <h2 class="text-4xl font-black mb-4">יכולות ביצוע הנדסיות</h2>
+                <p class="text-gray-600 text-lg">מפתרונות ביסוס מורכבים ועד למערכות ניקוז אזוריות, המעטפת ההנדסית שלנו מספקת שקט נפשי למזמיני העבודה.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow p-8 border-b-4 border-transparent hover:border-brand-orange group">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-brand-orange transition-colors">
+                        <i class="fa-solid fa-mountain text-2xl text-brand-orange group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-brand-navy">עבודות עפר ופיתוח</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        שינוע כמויות מאסיביות של חומר, חפירת מרתפים, דיפון קרקע, הכשרת שטחים פתוחים (שצ"פים) ויישור שטח ליזמות נדל"ן ולתעשייה.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow p-8 border-b-4 border-transparent hover:border-brand-orange group">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-brand-orange transition-colors">
+                        <i class="fa-solid fa-road text-2xl text-brand-orange group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-brand-navy">סלילה, כבישים ותעבורה</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        הקמת תשתיות תנועה, מעגלי תנועה, יישום מצעים קבלניים, אספלט, ומערכות תעבורה היקפיות בסטנדרטים לאומיים.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow p-8 border-b-4 border-transparent hover:border-brand-orange group">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-brand-orange transition-colors">
+                        <i class="fa-solid fa-water text-2xl text-brand-orange group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-brand-navy">תשתיות זרימה וניקוז</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        התמחות ייחודית בפתרונות הידרולוגיים, עבודה מול רשויות ניקוז (כגון רשות ניקוז ערבה), הסדרת תוואי נחלים והקמת מאגרים.
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow p-8 border-b-4 border-transparent hover:border-brand-orange group">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-brand-orange transition-colors">
+                        <i class="fa-solid fa-snowplow text-2xl text-brand-orange group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-brand-navy">מערך צמ"ה ולוגיסטיקה</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        צי משאיות וכלי ציוד מכני הנדסי כבד בבעלותנו הכולל באגרים, שופלים, מחפרונים ומפלסות, מבטיח זמינות מיידית לכל פרויקט.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Portfolio -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div class="max-w-2xl">
+                    <h3 class="text-brand-orange font-bold text-lg mb-2">מקרי בוחן (Case Studies)</h3>
+                    <h2 class="text-4xl font-black mb-4">פרויקטים נבחרים בשטח</h2>
+                    <p class="text-gray-600">ביצוע קפדני, עמידה בתקציב ובלוחות זמנים מאתגרים מול הגופים המוסדיים הגדולים בארץ.</p>
+                </div>
+                <div class="mt-6 md:mt-0">
+                    <button class="bg-brand-navy text-white px-6 py-2 rounded font-bold hover:bg-gray-800 transition-colors">לכל הפרויקטים <i class="fa-solid fa-arrow-left ml-2"></i></button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card relative rounded-xl overflow-hidden shadow-lg cursor-pointer bg-brand-navy">
+                    <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=2070&auto=format&fit=crop" alt="פרויקט חבל אילות" class="w-full h-72 object-cover opacity-80 transition-transform duration-500 hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-6">
+                        <span class="bg-brand-orange text-white text-xs font-bold px-2 py-1 rounded inline-block w-max mb-2">מועצה אזורית חבל אילות</span>
+                        <h3 class="text-xl font-bold text-white mb-1">פיתוח תשתיות ועבודות עפר</h3>
+                        <p class="text-gray-300 text-sm mb-3">ביצוע עבודות תשתית בהיקף נרחב, עמידה בלו"ז קפדני של 4 חודשים תוך פיקוח מוסדי הדוק.</p>
+                        <div class="flex items-center text-brand-orange text-sm font-bold">
+                            קרא עוד <i class="fa-solid fa-arrow-left ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card relative rounded-xl overflow-hidden shadow-lg cursor-pointer bg-brand-navy">
+                    <img src="https://images.unsplash.com/photo-1621501103258-3e0ccfb10e19?q=80&w=2070&auto=format&fit=crop" alt="פרויקט רשות ניקוז ערבה" class="w-full h-72 object-cover opacity-80 transition-transform duration-500 hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-6">
+                        <span class="bg-brand-orange text-white text-xs font-bold px-2 py-1 rounded inline-block w-max mb-2">רשות ניקוז ערבה</span>
+                        <h3 class="text-xl font-bold text-white mb-1">הסדרת תוואי נחלים והידרולוגיה</h3>
+                        <p class="text-gray-300 text-sm mb-3">הפעלת מערך צמ"ה להטיית זרימה, פתרונות ניקוז אסטרטגיים בתנאי שטח מדבריים מורכבים.</p>
+                        <div class="flex items-center text-brand-orange text-sm font-bold">
+                            קרא עוד <i class="fa-solid fa-arrow-left ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card relative rounded-xl overflow-hidden shadow-lg cursor-pointer bg-brand-navy">
+                    <img src="https://images.unsplash.com/photo-1590483864005-7f1c1f513dcc?q=80&w=2070&auto=format&fit=crop" alt="פרויקט כפר קאסם / ערערה" class="w-full h-72 object-cover opacity-80 transition-transform duration-500 hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-6">
+                        <span class="bg-brand-orange text-white text-xs font-bold px-2 py-1 rounded inline-block w-max mb-2">מכרזים מוניציפליים</span>
+                        <h3 class="text-xl font-bold text-white mb-1">פיתוח שצ"פים ותשתיות רחוב</h3>
+                        <p class="text-gray-300 text-sm mb-3">סלילת מדרכות, מעגלי תנועה והכנת תשתיות לפיתוח עירוני עבור רשויות מקומיות שונות.</p>
+                        <div class="flex items-center text-brand-orange text-sm font-bold">
+                            קרא עוד <i class="fa-solid fa-arrow-left ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ESG & Safety Section -->
+    <section id="esg" class="py-16 bg-brand-navy text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-brand-orange opacity-10" style="clip-path: polygon(100% 0, 100% 100%, 0 100%);"></div>
+        <div class="container mx-auto px-4 max-w-7xl relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-2/3">
+                    <h3 class="text-brand-orange font-bold text-lg mb-2">ממשל תאגידי, בטיחות ואחריות (ESG)</h3>
+                    <h2 class="text-3xl md:text-4xl font-black mb-6">מחויבות עליונה לחיי אדם ולסביבה</h2>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        כחברה המעסיקה צוותים נרחבים ומפעילה כלי צמ"ה כבדים, אנו מודעים לאחריות הכבדה המוטלת על כתפינו. טופ הנגב מפעילה מערך בטיחות וגהות מהמחמירים בענף. קציני בטיחות ותעבורה מפקחים באופן שוטף על כל אתר עבודה.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="flex items-start">
+                            <i class="fa-solid fa-hard-hat text-2xl text-brand-orange ml-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">הדרכות בטיחות שוטפות</h4>
+                                <p class="text-sm text-gray-400">תדריכי בוקר יומיומיים ונוהל "אפס סובלנות" לחריגות בטיחות באתרי העבודה.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fa-solid fa-scale-balanced text-2xl text-brand-orange ml-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">הוגנות תעסוקתית</h4>
+                                <p class="text-sm text-gray-400">הקפדה מלאה על זכויות סוציאליות, סביבת עבודה מכבדת ושמירה קפדנית על דיני העבודה.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 flex justify-center">
+                    <div class="w-48 h-48 rounded-full border-8 border-brand-orange flex items-center justify-center p-4 bg-white/5 backdrop-blur-sm">
+                        <div class="text-center">
+                            <i class="fa-solid fa-leaf text-4xl text-brand-orange mb-2"></i>
+                            <div class="font-black text-xl">ESG</div>
+                            <div class="text-xs">תקן תאגידי</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Careers Banner -->
+    <section id="careers" class="py-12 bg-orange-50 border-b border-orange-100">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between border-l-8 border-brand-orange">
+                <div class="mb-6 md:mb-0 max-w-xl">
+                    <h2 class="text-3xl font-black text-brand-navy mb-3">דרושים: בואו לבנות קריירה יציבה בנגב</h2>
+                    <p class="text-gray-600">
+                        אנו מגייסים מנהלי עבודה, מהנדסים אזרחיים, מפעילי צמ"ה ונהגי משאיות. הצטרפו לחברה חזקה וכלכלית המציעה אופק תעסוקתי, יציבות מלאה וסביבת עבודה בטוחה.
+                    </p>
+                </div>
+                <div>
+                    <button onclick="document.getElementById('contact-subject').value='hr'; document.getElementById('contact').scrollIntoView();" class="bg-brand-navy hover:bg-gray-800 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition-colors text-lg whitespace-nowrap">
+                        לשליחת קורות חיים <i class="fa-solid fa-paperclip ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Smart Routing -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h3 class="text-brand-orange font-bold text-lg mb-2">מערכת פניות וניתוב</h3>
+                <h2 class="text-4xl font-black mb-4">יצירת קשר מקוונת</h2>
+                <p class="text-gray-600">אנא בחרו את נושא הפנייה על מנת שהמערכת תנתב את הודעתכם לגורם הרלוונטי בחברה.</p>
+            </div>
+
+            <div class="flex flex-col lg:flex-row gap-12 bg-white rounded-2xl shadow-xl overflow-hidden">
+                <!-- Contact Info Panel -->
+                <div class="lg:w-1/3 bg-brand-navy text-white p-10 flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-brand-orange rounded-bl-full opacity-20"></div>
+                    <div class="relative z-10">
+                        <h3 class="text-2xl font-black mb-8">משרדי ההנהלה</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center ml-4 shrink-0">
+                                    <i class="fa-solid fa-location-dot text-brand-orange"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-300 text-sm">כתובת רשומה</h4>
+                                    <p>מורדי הגטאות 127<br>באר שבע, מיקוד 8420947</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center ml-4 shrink-0">
+                                    <i class="fa-solid fa-phone text-brand-orange"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-300 text-sm">מרכזייה ארצית</h4>
+                                    <p dir="ltr" class="text-right">08-6651789</p>
+                                    <p dir="ltr" class="text-right">072-3132525</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center ml-4 shrink-0">
+                                    <i class="fa-solid fa-envelope text-brand-orange"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-300 text-sm">דואר אלקטרוני (מזכירות)</h4>
+                                    <p>office@tophanegev.co.il</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center ml-4 shrink-0">
+                                    <i class="fa-solid fa-clock text-brand-orange"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-300 text-sm">שעות פעילות (משרד)</h4>
+                                    <p>א' - ה': 07:30 - 19:30<br>ו': 09:00 - 13:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Panel -->
+                <div class="lg:w-2/3 p-10">
+                    <form id="smart-contact-form" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2">שם מלא / חברה מציעה *</label>
+                                <input type="text" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-orange focus:border-brand-orange outline-none transition-all" placeholder="הזן שם מלא">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2">טלפון לחזרה *</label>
+                                <input type="tel" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-orange focus:border-brand-orange outline-none transition-all" placeholder="050-0000000">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">דואר אלקטרוני *</label>
+                            <input type="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-orange focus:border-brand-orange outline-none transition-all" placeholder="email@example.com">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">נושא הפנייה (ניתוב אוטומטי) *</label>
+                            <select id="contact-subject" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-orange focus:border-brand-orange outline-none transition-all bg-white">
+                                <option value="" disabled selected>בחר נושא...</option>
+                                <option value="tenders">מכרזים, הצעות עבודה ורשויות (יועבר למחלקת הנדסה)</option>
+                                <option value="subcontractors">הצעת שירות כקבלן משנה / ספק</option>
+                                <option value="hr">משאבי אנוש - דרושים וקריירה (יועבר למחלקת כ"א)</option>
+                                <option value="office">הנהלת חשבונות ומזכירות</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">תוכן ההודעה</label>
+                            <textarea rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-orange focus:border-brand-orange outline-none transition-all resize-none" placeholder="פרט את פנייתך כאן..."></textarea>
+                        </div>
+
+                        <div class="text-xs text-gray-500 mb-4">
+                            * בשליחת טופס זה הנך מסכים למדיניות הפרטיות של האתר ולשמירת פרטיך לצורך יצירת קשר. (אין במידע המפורסם באתר משום ייעוץ הנדסי).
+                        </div>
+
+                        <button type="submit" class="w-full bg-brand-orange hover:bg-orange-600 text-white font-bold py-4 rounded-lg shadow-md transition-colors text-lg">
+                            שלח פנייה למערכת
+                        </button>
+                        
+                        <!-- Success Message (Hidden by default) -->
+                        <div id="form-success" class="hidden mt-4 p-4 bg-green-50 text-green-700 rounded-lg border border-green-200 text-center font-bold">
+                            <i class="fa-solid fa-check-circle ml-2"></i> פנייתך נותבה בהצלחה למחלקה הרלוונטית. ניצור קשר בהקדם.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-navy text-white border-t-4 border-brand-orange pt-16 pb-8">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- About -->
+                <div>
+                    <div class="flex items-center gap-2 mb-6">
+                        <i class="fa-solid fa-building text-brand-orange text-2xl"></i>
+                        <h2 class="font-black text-xl leading-tight">טופ הנגב</h2>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-4 leading-relaxed">
+                        חברה קבלנית רשומה (ג'-5) המתמחה בעבודות עפר, פיתוח ותשתיות. שותפה אסטרטגית בבניין הנגב והדרום מעל ל-25 שנה.
+                    </p>
+                    <div class="flex space-x-4 space-x-reverse">
+                        <a href="#" class="w-8 h-8 rounded bg-white/10 flex items-center justify-center hover:bg-brand-orange transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="w-8 h-8 rounded bg-white/10 flex items-center justify-center hover:bg-brand-orange transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <!-- Links -->
+                <div>
+                    <h3 class="font-bold text-lg mb-6 border-b border-gray-700 pb-2">ניווט מהיר</h3>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="#about" class="hover:text-brand-orange transition-colors">אודות ופרופיל חברה</a></li>
+                        <li><a href="#services" class="hover:text-brand-orange transition-colors">תחומי התמחות</a></li>
+                        <li><a href="#projects" class="hover:text-brand-orange transition-colors">פרויקטים ומקרי בוחן</a></li>
+                        <li><a href="#esg" class="hover:text-brand-orange transition-colors">בטיחות ואחריות תאגידית</a></li>
+                        <li><a href="#careers" class="hover:text-brand-orange transition-colors">דרושים וקריירה</a></li>
+                    </ul>
+                </div>
+
+                <!-- Statutory & Legal -->
+                <div>
+                    <h3 class="font-bold text-lg mb-6 border-b border-gray-700 pb-2">מידע סטטוטורי ומשפטי</h3>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-brand-orange transition-colors">הצהרת מדיניות פרטיות</a></li>
+                        <li><a href="#" class="hover:text-brand-orange transition-colors">תנאי שימוש והסתייגות מקצועית</a></li>
+                        <li><a href="#" class="hover:text-brand-orange transition-colors flex items-center"><i class="fa-solid fa-wheelchair ml-2 text-brand-orange"></i> הצהרת נגישות תקן AA</a></li>
+                        <li class="mt-4 text-xs text-gray-500">מספר ח.פ: 512590431</li>
+                        <li class="text-xs text-gray-500">קבלן רשום מס': 21455 (המחשה)</li>
+                    </ul>
+                </div>
+
+                <!-- Accessibility Button -->
+                <div>
+                    <h3 class="font-bold text-lg mb-6 border-b border-gray-700 pb-2">נגישות משרדים ואתר</h3>
+                    <p class="text-gray-400 text-sm mb-4">
+                        משרדי החברה מונגשים במלואם. למידע נוסף אודות הסדרי הנגישות, ניתן לפנות לרכז הנגישות בחברה.
+                    </p>
+                    <button class="bg-transparent border border-gray-500 text-gray-300 hover:text-white hover:border-white px-4 py-2 rounded text-sm transition-colors flex items-center">
+                        <i class="fa-solid fa-universal-access ml-2"></i> פתיחת תפריט נגישות
+                    </button>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+                <p>&copy; 2026 טופ הנגב פרויקטים בנין ופיתוח בע"מ. כל הזכויות שמורות.</p>
+                <p class="mt-2 md:mt-0">אופיין ופותח בהתאם לתקני אבטחת מידע ו-SEO תאגידי.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // Counter Animation for Stats
+        const counters = document.querySelectorAll('.counter');
+        const speed = 200; // The lower the slower
+
+        const animateCounters = () => {
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+                    const inc = target / speed;
+
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + inc);
+                        setTimeout(updateCount, 15);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                updateCount();
+            });
+        }
+
+        // Trigger counter animation on scroll
+        let animated = false;
+        window.addEventListener('scroll', () => {
+            const statsSection = document.querySelector('.bg-brand-light.-mt-20');
+            if (!statsSection) return;
+            
+            const sectionPos = statsSection.getBoundingClientRect().top;
+            const screenPos = window.innerHeight;
+
+            if (sectionPos < screenPos && !animated) {
+                animateCounters();
+                animated = true;
+            }
+        });
+
+        // Smart Form Routing Simulator
+        const form = document.getElementById('smart-contact-form');
+        const successMsg = document.getElementById('form-success');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault(); // Prevent page reload
+            const subject = document.getElementById('contact-subject').value;
+            
+            // Simulate routing logic
+            console.log(`Routing form submission to department: ${subject}`);
+            
+            // Show success, hide form elements briefly
+            successMsg.classList.remove('hidden');
+            
+            // Reset form after 4 seconds
+            setTimeout(() => {
+                form.reset();
+                successMsg.classList.add('hidden');
+            }, 4000);
+        });
+    </script>
+</body>
+</html>
